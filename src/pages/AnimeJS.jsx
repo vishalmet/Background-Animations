@@ -6,6 +6,8 @@ import StaggeringGrid from "../components/StaggeringGrid";
 import StaggeringAxisGrid from "../components/StaggeringAxis";
 import MorphingAnimation from "../components/Morphing";
 import MotionPath from "../components/MotionPath";
+import RandomAnimation from "../components/RandomValues";
+import RandomSolidsAnimation from "../components/RandomValues";
 
 const AnimeJS = () => {
   return (
@@ -105,6 +107,19 @@ const AnimeJS = () => {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua."
             </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className=" pt-32">
+        <p className=" flex justify-center text-2xl ">
+          Random Values Animation with Anime.js
+        </p>
+
+        <div className=" flex items-center gap-10">
+          <div className=" m-10 ">
+            <RandomSolidsAnimation />
           </div>
         </div>
       </div>
