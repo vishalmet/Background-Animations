@@ -6,14 +6,34 @@ const StaggeringGrid = () => {
   const gridRef = useRef(null);
 
   useEffect(() => {
-    anime({
-      targets: '.staggering-grid-demo .el',
-      scale: [
-        {value: .1, easing: 'easeOutSine', duration: 500},
-        {value: 1, easing: 'easeInOutQuad', duration: 1200}
-      ],
-      delay: anime.stagger(200, {grid: [14, 5], from: 'center'})
-    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            anime({
+              targets: '.staggering-grid-demo .el',
+              scale: [
+                { value: 0.1, easing: 'easeOutSine', duration: 500 },
+                { value: 1, easing: 'easeInOutQuad', duration: 1200 },
+              ],
+              delay: anime.stagger(200, { grid: [14, 5], from: 'center' }),
+              loop: true, // Make the animation continuous
+            });
+          }
+        });
+      },
+      { threshold: 0.1 } // Trigger when 10% of the component is in view
+    );
+
+    if (gridRef.current) {
+      observer.observe(gridRef.current);
+    }
+
+    return () => {
+      if (gridRef.current) {
+        observer.unobserve(gridRef.current);
+      }
+    };
   }, []);
 
   const createGrid = () => {
