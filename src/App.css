@@ -136,3 +136,19 @@
   background-color: orange;
   display: inline-block;
 }
+
+/* linetext drawing */
+/* LineDrawingTextDemo.css */
+/* PathDrawingTextDemo.css */
+.path-drawing-text-demo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.path-drawing-text-demo svg {
+  width: 500px;
+  height: 100px;
+}

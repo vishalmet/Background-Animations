@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import anime from 'animejs/lib/anime.es.js';
 
-const StaggeringAxisGridDemo = () => {
+const StaggeringAxisGrid = () => {
   const gridRef = useRef(null);
 
   useEffect(() => {
@@ -32,4 +32,4 @@ const StaggeringAxisGridDemo = () => {
   );
 };
 
-export default StaggeringAxisGridDemo;
+export default StaggeringAxisGrid;
