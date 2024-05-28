@@ -4,12 +4,8 @@ import FunctionBasedValues from "../components/FunctionBasedValues";
 import Menus from "../components/Menus";
 import StaggeringGrid from "../components/StaggeringGrid";
 import StaggeringAxisGrid from "../components/StaggeringAxis";
-import LineDrawingTextDemo from "../components/Morphing";
-import PathDrawingTextDemo from "../components/Morphing";
-import LineDrawingAnimation from "../components/Morphing";
-import WordDrawingAnimation from "../components/Morphing";
-import LineDrawingWordAnimation from "../components/Morphing";
 import MorphingAnimation from "../components/Morphing";
+import MotionPath from "../components/MotionPath";
 
 const AnimeJS = () => {
   return (
@@ -78,12 +74,31 @@ const AnimeJS = () => {
 
       <div className=" pt-32">
         <p className=" flex justify-center text-2xl ">
-          Staggering Axis Animation with Anime.js
+          Morphing Animation with Anime.js
         </p>
 
         <div className=" flex items-center gap-10">
           <div className=" ml-10 ">
             <MorphingAnimation />
+          </div>
+          <div className="">
+            <p className=" text-2xl  w-[60%]">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className=" pt-32">
+        <p className=" flex justify-center text-2xl ">
+          Motionpath Animation with Anime.js
+        </p>
+
+        <div className=" flex items-center gap-10">
+          <div className=" ml-10 ">
+            <MotionPath />
           </div>
           <div className="">
             <p className=" text-2xl  w-[60%]">
