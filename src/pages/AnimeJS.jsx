@@ -3,6 +3,7 @@ import React from "react";
 import FunctionBasedValues from "../components/FunctionBasedValues";
 import Menus from "../components/Menus";
 import StaggeringGrid from "../components/StaggeringGrid";
+import StaggeringAxisGridDemo from "../components/StaggeringAxis";
 
 const AnimeJS = () => {
   return (
@@ -39,6 +40,25 @@ const AnimeJS = () => {
         <div className=" flex items-center gap-10">
           <div className=" ml-10 ">
             <StaggeringGrid />
+          </div>
+          <div className="">
+            <p className=" text-2xl  w-[60%]">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className=" pt-32">
+        <p className=" flex justify-center text-2xl ">
+          Staggering Axis Animation with Anime.js
+        </p>
+
+        <div className=" flex items-center gap-10">
+          <div className=" ml-10 ">
+            <StaggeringAxisGridDemo />
           </div>
           <div className="">
             <p className=" text-2xl  w-[60%]">
