@@ -60,6 +60,17 @@ const Menus = () => {
                   Wave Background
                 </motion.a>
               </li>
+              <li>
+                <motion.a
+                  href="/animejs"
+                  className=" px-4 py-2 rounded-md hover:cursor-pointer"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.9 }}
+                  //   onClick={() => handleMenuItemClick('menu-item-3-section')}
+                >
+                  AnimeJS
+                </motion.a>
+              </li>
             </motion.div>
           </ul>
         </div>

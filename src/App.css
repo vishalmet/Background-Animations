@@ -81,3 +81,24 @@
   width: 100%;
   height: auto;
 }
+
+
+/* anime js */
+
+/* function based values */
+.function-based-values-demo {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.function-based-values-demo .el {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  /* border: 1px solid #ccc;  */
+  background-color: #ffc800;
+}
+
+/* staggering  */
